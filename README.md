@@ -1,1 +1,1 @@
-# General-Dax
+# General-Dax use cases for Power BI
