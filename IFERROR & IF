@@ -1,0 +1,9 @@
+# Better to use iferror whenever results are same and expression tested for an error,
+their is no need to duplicate the expression in two place and the code is safer and more readable
+IFERROR( SALES[Qty] * Sales[Price], Blank())
+# However, a developer should use IF when they want to return the result of different expression
+IF(
+  ISERROR( Sales[Qty] * Sales[Price]),
+  Blank(),
+  Sales[Qty] * Sales[Price]
+  )
