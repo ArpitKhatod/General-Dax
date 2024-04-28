@@ -1,0 +1,5 @@
+IF(
+  Sales[DiscountPerc] = 0,            -- Check if there is a discount
+  Blank(),                            -- Return a blank if no discount is present
+  Sales[DiscountPerc} * Sales[Amount] -- Compute the discount otherwise
+  )
